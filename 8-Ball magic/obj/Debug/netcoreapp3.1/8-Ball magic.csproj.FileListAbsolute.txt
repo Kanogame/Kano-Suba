@@ -1,0 +1,27 @@
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\8-Ball magic.exe
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\8-Ball magic.deps.json
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\8-Ball magic.runtimeconfig.json
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\8-Ball magic.runtimeconfig.dev.json
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\8-Ball magic.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\8-Ball magic.pdb
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.csprojAssemblyReference.cache
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.AssemblyInfoInputs.cache
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.AssemblyInfo.cs
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.pdb
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.genruntimeconfig.cache
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Discord.Net.Commands.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Discord.Net.Core.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Discord.Net.Interactions.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Discord.Net.Rest.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Discord.Net.Webhook.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Discord.Net.WebSocket.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\System.Linq.Async.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\System.Reactive.dll
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\bin\Debug\netcoreapp3.1\System.Reactive.xml
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.csproj.CopyComplete
+C:\Users\kano\source\repos\8-Ball magic\8-Ball magic\obj\Debug\netcoreapp3.1\8-Ball magic.csproj.CoreCompileInputs.cache

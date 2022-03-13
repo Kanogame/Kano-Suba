@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\kano\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kano\\.nuget\\packages"
+    ]
+  }
+}
