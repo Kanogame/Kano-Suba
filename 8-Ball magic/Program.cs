@@ -7,7 +7,6 @@ namespace _8_Ball_magic
 {
     class Program
     {
-        //private readonly DiscordSocketClient client;
         static bool realchat = false;
         static string cons = "";
 
@@ -15,41 +14,32 @@ namespace _8_Ball_magic
         {
             DiscordSocketClient client = new DiscordSocketClient();
             client.MessageReceived += Client_MessageReceived;
-            if (!realchat)
-            {
-                client.Log += Client_Log;
-            }
-            else
-            {
-                client.Log -= Client_Log;
-            }
+            client.ReactionAdded += Client_ReactionAdded;
+            client.Log += Client_Log;
 
-            var token = "";
+            var token = "OTUyNDg0MjkxMDI2MjU1ODgy.Yi2sHw.156LHHf2CV5H17Bdkh3AVbQOM68";
 
             await client.LoginAsync(TokenType.Bot, token);
             await client.StartAsync();
-
-            string a = "";
             do
             {
                 Console.ReadLine();
-            } while (a != "real chat" || realchat);
-            if (a == "real chat")
-            {
-                realChat();
-                
-            }
+            } while (true);
+        }
+
+        private static Task Client_ReactionAdded(Cacheable<IUserMessage, ulong> arg1, Cacheable<IMessageChannel, ulong> arg2, SocketReaction arg3)
+        {
+            /*
+            if (arg3.Emote
+            Console.WriteLine("ReactionAdded");
+            */
+            return Task.CompletedTask;
         }
 
         static private Task Client_Log(LogMessage arg)
         {
             Console.WriteLine(arg);
             return Task.CompletedTask;
-        }
-
-        static private void realChat()
-        {
-            realchat = true;
         }
 
         static private Task Client_MessageReceived(SocketMessage message)
@@ -120,13 +110,44 @@ namespace _8_Ball_magic
                     case 0:
                         message.Channel.SendMessageAsync(":red_circle: Даже не думай");
                         break;
-                    }
-                }    
-            else if (realchat)
-            {
-                message.Channel.SendMessageAsync(cons);
+                }
             }
-            return Task.CompletedTask;
+            else if (message.Content.StartsWith("+лох ДаНет") && !message.Author.IsBot)
+            {
+                int YesNO = rd.Next(2);
+                switch (YesNO)
+                {
+                    case 0:
+                        message.Channel.SendMessageAsync(":red_circle: Нет");
+                        break;
+                    case 1:
+                        message.Channel.SendMessageAsync(":green_circle: Да");
+                        break;
+                }
+            }
+            else if (message.Content.StartsWith("+лох Ранд ") && !message.Author.IsBot)
+            {
+                string Rand = message.Content;
+                Rand = Rand.Remove(0, 10);
+                try
+                {
+                    int randomInt = int.Parse(Rand);
+                    Rand = (rd.Next(randomInt) + 1).ToString();
+                    message.Channel.SendMessageAsync(Rand);
+                }
+                catch (Exception)
+                {
+                    message.Channel.SendMessageAsync("Вы ввели не верное значение");
+                }
+            }
+            else if (message.Content.StartsWith("+лох Тест") && !message.Author.IsBot)
+            {
+                message.Channel.SendMessageAsync("Вы ввели не верное значение");
+                var heartEmoji = new Emoji("\U0001f495");
+                var emote = Emote.Parse("<:igorNotSmile:877385578784620574>");
+                message.AddReactionAsync(emote);
+            }
+                return Task.CompletedTask;
         }
     }
 }
